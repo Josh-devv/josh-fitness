@@ -22,14 +22,13 @@ const Merch = ({items}: Props) => {
                             
                             <div className="bg-zinc-800 w-[90%] 
                              flex justify-center items-end top-[70%] max-sm:top-[80%] max-md:top-[70%] max-md:h-[70px] absolute h-[100px]"><p>{item.item}</p></div>
-                        </div>
-                    ))
+                            </div>
+                            ))
                 }
-                <div>
-
-                </div>
+                        <div>
             </div>
         </div>
+    </div>
     </section>
   )
 }

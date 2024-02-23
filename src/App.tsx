@@ -7,9 +7,6 @@ import { UserData } from "./shared/types"
 import img1 from "@/assets/real.png"
 import img2 from "@/assets/real1.png"
 import m1 from "@/assets/m1.png"
-import m2 from "@/assets/m2.png"
-import m3 from "@/assets/m3.png"
-import m4 from "@/assets/m4.png"
 import Merch from "./Components/merch"
 
 

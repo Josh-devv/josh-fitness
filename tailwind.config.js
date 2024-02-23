@@ -17,7 +17,7 @@ export default {
         "mobile-home": "url('./assets/HomePageGraphic.png')"
       }),
       fontFamily: {
-        dmsans: ["DM Sans", "sans-serif"],
+        dmsans: ["Outfit", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
       },
       container: {
@@ -30,8 +30,9 @@ export default {
     },
     screens: {
       xs: "480px",
-      sm: "768px",
-      md: "1060px"
+      sm: "640px",
+      md: "900px",
+      lg: "1060px"
     }
   },
   plugins: [

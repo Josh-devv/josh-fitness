@@ -20,7 +20,7 @@ const Navbar = ({selectedPage, setSelectedPage, top }: Props) => {
     const between = "flex items-center justify-between";
     const [menu, setMenu] = useState<boolean>(false)
     const medScreen = useMediaQuery("(min-width: 1024px)")
-    const navbg = top ? "" : " drop-shadow-xl bg-blue-700";//wstyle for when its at the top of the page
+    const navbg = top ? "" : " drop-shadow-xl bg-black";//wstyle for when its at the top of the page
 
   return (
     <nav>
@@ -72,20 +72,32 @@ const Navbar = ({selectedPage, setSelectedPage, top }: Props) => {
                       </button>
                   </div>
 
-                  <div className="ml-[33%] flex flex-col gap-10 text-2xl">
+                  <div className="pl-10 font-dmsans flex flex-col gap-10 text-[15px]">
                     <Link page="Home" 
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage} 
                     />
-                    <Link page="Benefits" 
+                    <Link page="About" 
                     setSelectedPage={setSelectedPage} 
                     selectedPage={selectedPage} 
                     />
-                    <Link page="Our Classes"
+                    <Link page="Workout Programs"
                     setSelectedPage={setSelectedPage} 
                     selectedPage={selectedPage}
                     />
-                    <Link page="Contact Us"
+                    <Link page="Recipe"
+                    setSelectedPage={setSelectedPage}
+                      selectedPage={selectedPage}
+                    />
+                    <Link page="Store"
+                    setSelectedPage={setSelectedPage}
+                      selectedPage={selectedPage}
+                    />
+                    <Link page="Sign In"
+                    setSelectedPage={setSelectedPage}
+                      selectedPage={selectedPage}
+                    />
+                    <Link page="Become a Member"
                     setSelectedPage={setSelectedPage}
                       selectedPage={selectedPage}
                     />

@@ -33,7 +33,8 @@ export default {
       sm: "640px",
       md: "900px",
       lg: "1060px",
-      xsm: "380px"
+      xsm: "380px",
+      xxsm: "300px"
     }
   },
   plugins: [

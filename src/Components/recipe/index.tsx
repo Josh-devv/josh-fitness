@@ -9,10 +9,10 @@ type Props = {
 const Recipe = ({foods}: Props) => {
   return (
     <section id="recipe" className="w-[100%] bg-black mx-auto pt-20 max-sm:pt-10 py-8 flex justify-center font-dmsans text-white">
-        <div className="w-[95%] max-lg:w-[90%]">
-            <div className="w-100%] flex items-center justify-between">
-                <p className="text-[25px] font-medium max-sm:text-[15px]">///RECIPES</p>
-                <button className="border border-white px-3 py-2 rounded-lg max-sm:py-1">View more recipes</button>
+        <div className="w-[90%] max-lg:w-[90%]">
+            <div className="w-[95%] flex items-center justify-between">
+                <p className="text-[25px] font-medium max-sm:text-[15px] max-xxsm:text-[13px]">///RECIPES</p>
+                <button className="border border-white px-3 py-2 max-xxsm:text-[12px] rounded-lg max-sm:py-1">View more recipes</button>
             </div>
 
             <div className="flex pt-10 max-md:flex-col  justify-between">

@@ -19,9 +19,9 @@ const Workout = ({users}: Data) => {
                 <img src={user.img} className="max-w-[200px w-full" alt="" />
                 <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30"></div>
                 <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white z-10 whitespace-nowrap">
-                    <span className="inline-block max-sm:text-[15px] transform -rotate-90 font-bold text-[30px]">{user.text}</span>
+                    <span className="inline-block max-xxsm:text-[15px] max-sm:text-[20px] transform -rotate-90 font-bold text-[30px]">{user.text}</span>
                 </p>
-                <button className=" absolute border justify-center flex py-2 w-[80%] max-md:w-[70%] px-3 max-sm:px-2 text-[13px] font-normal rounded-md border-white bottom-4 left-1/2 transform -translate-x-1/2  text-white z-10">
+                <button className=" absolute border justify-center flex py-2 w-[80%] max-md:w-[70%] max-xxsm:text-[12px] max-xsm:py-1 px-3 max-sm:px-2 text-[13px] font-normal rounded-md border-white bottom-4 left-1/2 transform -translate-x-1/2  text-white z-10">
                     {user.button}
                 </button>
             </div>

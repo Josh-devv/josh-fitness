@@ -9,12 +9,12 @@ const Merch = ({items}: Props) => {
   return (
     <section className="w-[100%] bg-black mx-auto pt-20 max-sm:pt-10 py-8 flex justify-center font-dmsans text-white">
         <div className="w-[90%] ">
-            <div className="w-100%] flex items-center justify-between">
-                <p className="text-[25px] font-medium max-sm:text-[15px]">///GET OUR MERCH</p>
-                <button className="border border-white px-3 py-2 rounded-lg max-sm:py-1">View product</button>
+            <div className="w-[95%] flex items-center justify-between">
+                <p className="text-[25px] font-medium max-sm:text-[15px] max-xxsm:text-[12px]">///GET OUR MERCH</p>
+                <button className="border border-white px-3 py-2 rounded-lg max-xxsm:text-[12px] max-sm:py-1">View product</button>
             </div>
 
-            <div className="flex  pt-12 max-sm:pt-0 max-sm:grid max-sm:grid-cols-2 justify-between">
+            <div className="flex  pt-12 max-sm:pt-0 max-sm:grid max-sm:grid-cols-1 justify-between">
                 {
                     items.map((item) => (
                         <div className="flex  w-[100%]  relative flex-col justify-between items-center">

@@ -14,6 +14,7 @@ import rec5 from "@/assets/rec5.png"
 import Merch from "./Components/merch"
 import Gallery from "./Components/gallery"
 import Recipe from "./Components/recipe"
+import Contact from "./Components/contact"
 
 
 function App() {
@@ -122,6 +123,7 @@ function App() {
       <Gallery />
       <Recipe foods={foods}/>
       <Merch items={items}/>
+      <Contact />
     </div>
   )
 }

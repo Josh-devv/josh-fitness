@@ -1,5 +1,6 @@
 export enum SelectedPage {
     Home = "home",
+    About = "about",
     Benefits = "benefits",
     OurClasses = "ourclasses",
     ContactUs = "contactus",
@@ -16,5 +17,10 @@ export type UserData = {
 
 export type MerchData = {
   item: string;
+  img: string;
+}
+
+export type RecipeData = {
+  food: string;
   img: string;
 }

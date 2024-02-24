@@ -7,7 +7,7 @@ type Data = {
 
 const Workout = ({users}: Data) => {
   return (
-    <section id="about" className=" text-white pt-20 max-sm:pt-10 bg-black ">
+    <section id="workoutprograms" className=" text-white pt-20 max-sm:pt-10 bg-black ">
         <h1 className="mx-auto z-20 max-sm:text-[20px] w-[90%] flex font-dmsans font-bold text-[30px] justify-start md:flex md:h-5/6">
             Free Workout Program
         </h1>

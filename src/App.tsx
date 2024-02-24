@@ -7,7 +7,6 @@ import { UserData } from "./shared/types"
 import img1 from "@/assets/real.png"
 import img2 from "@/assets/real1.png"
 import m1 from "@/assets/m1.png"
-import gal1 from "@/assets/g1.png"
 import Merch from "./Components/merch"
 import Gallery from "./Components/gallery"
 

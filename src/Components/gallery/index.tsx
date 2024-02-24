@@ -4,9 +4,7 @@ import gal3 from "@/assets/g5.png"
 import gal4 from "@/assets/g6.png"
 
 
-type Props = {}
-
-const Gallery = (props: Props) => {
+const Gallery = () => {
   return (
     <section className="w-[100%] pt-20 py-8 flex flex-col justify-center items-center font-dmsans text-white  bg-black bg-opacity-95">
         <div className="text-[25px] w-[100%] flex justify-center font-medium max-sm:text-[15px]">

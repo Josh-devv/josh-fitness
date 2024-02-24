@@ -6,7 +6,7 @@ import gal4 from "@/assets/g6.png"
 
 const Gallery = () => {
   return (
-    <section className="w-[100%] pt-20 py-8 flex flex-col justify-center items-center font-dmsans text-white  bg-black bg-opacity-95">
+    <section className="w-[100%] pt-20 max-sm:pt-10 py-8 flex flex-col justify-center items-center font-dmsans text-white  bg-black ">
         <div className="text-[25px] w-[100%] flex justify-center font-medium max-sm:text-[15px]">
             <p className="w-[90%] self-start max-sm:text-[20px] pb-6">///Gallery</p>
         </div>
@@ -14,7 +14,7 @@ const Gallery = () => {
         <div className="w-[90%] flex flex-col justify-center">
     <div className="flex w-[100%] justify-evenly overflow-x-auto">
         <div className="flex w-[100%] space-x-2">
-            <img src={gal1} className="rounded-3xl w-[400px] max-sm:w-[250px] h-[300px]" />
+            <img src={gal1} className="rounded-3xl w-[400px] h-[300px]" />
             <img src={gal2} className="rounded-3xl w-[190px]" />
             <img src={gal1} className="rounded-3xl w-[400px] h-[300px]" />
             <img src={gal2} className="rounded-3xl w-[190px]" />

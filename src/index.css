@@ -16,3 +16,7 @@ body,
     font-family: sans-serif;
     @apply text-gray-500
 }
+
+::-webkit-scrollbar {
+    display: none;
+}

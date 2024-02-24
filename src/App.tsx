@@ -7,7 +7,9 @@ import { UserData } from "./shared/types"
 import img1 from "@/assets/real.png"
 import img2 from "@/assets/real1.png"
 import m1 from "@/assets/m1.png"
+import gal1 from "@/assets/g1.png"
 import Merch from "./Components/merch"
+import Gallery from "./Components/gallery"
 
 
 function App() {
@@ -71,7 +73,6 @@ function App() {
   const [top, setTop] = useState<boolean>(true)
 
 
-  //for the navbar effect
   useEffect(()=> {
     const handleScroll = () => {
       if(window.scrollY === 0 ){
@@ -80,8 +81,8 @@ function App() {
       }
       if(window.scrollY !== 0) setTop(false)
     }
-  window.addEventListener("scroll", handleScroll)
-  return ()=> window.removeEventListener("scroll", handleScroll)
+    window.addEventListener("scroll", handleScroll)
+    return ()=> window.removeEventListener("scroll", handleScroll)
   })
 
   return (
@@ -96,6 +97,7 @@ function App() {
       <Home setSelectedPage={setSelectedPage}/>
       <Workout users={users}/>
       <Merch items={items}/>
+      <Gallery />
     </div>
   )
 }

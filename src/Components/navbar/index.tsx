@@ -6,7 +6,6 @@ import Link from "./Link";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import { Bars3Icon,  XMarkIcon } from "@heroicons/react/16/solid";
 import { useState } from "react";
-
 import fit from "@/assets/fitt.png"
 
 

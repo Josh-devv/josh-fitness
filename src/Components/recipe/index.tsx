@@ -16,7 +16,7 @@ const Recipe = ({foods, setSelectedPage}: Props) => {
         >
             <div className="w-[95%] flex items-center justify-between">
                 <p className="text-[25px] font-medium max-sm:text-[15px] max-xxsm:text-[13px]">///RECIPES</p>
-                <button className="border border-white px-3 py-2 max-xxsm:text-[12px] rounded-lg max-sm:py-1">View more recipes</button>
+                <button className="border border-white bg-white text-black px-3 py-2 max-xxsm:text-[12px] rounded-lg max-sm:py-1">View more recipes</button>
             </div>
 
             <div className="flex pt-10 max-md:flex-col  justify-between">
@@ -25,7 +25,7 @@ const Recipe = ({foods, setSelectedPage}: Props) => {
                     className=""
                     initial="hidden"whileInView
                     ="visible"
-                    viewport={{ once: false, amount: 0.5 }}
+                    viewport={{ once: true, amount: 0.5 }}
                     transition={{ duration: 0.2 }}
                     variants={{
                       hidden: { opacity: 0, y: 50 },
@@ -42,7 +42,7 @@ const Recipe = ({foods, setSelectedPage}: Props) => {
                             bed of fluffy quinoa. Completed with a healthy and delicious
                           satay dipping sauce and crushed roasted peanuts. Delicious!
                         </p>
-                        <button className="border border-white px-3 py-2 rounded-lg max-sm:py-1">View full recipes</button>
+                        <button className="border border-white text-black bg-white px-3 py-2 rounded-lg max-sm:py-1">View full recipes</button>
                     </div>
                 </div>
 
@@ -51,7 +51,7 @@ const Recipe = ({foods, setSelectedPage}: Props) => {
                     className="flex flex-col max-sm:grid max-sm:grid-cols-2 max-md:flex-row justify-around max-md:justify-between h-full"
                     initial="hidden"whileInView
                     ="visible"
-                    viewport={{ once: false, amount: 0.5 }}
+                    viewport={{ once: true, amount: 0.5 }}
                     transition={{ duration: 0.9 }}
                     variants={{
                       hidden: { opacity: 0, x: -50 },

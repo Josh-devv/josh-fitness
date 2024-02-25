@@ -24,7 +24,7 @@ const Gallery = ({setSelectedPage}: Props) => {
         className="flex w-[100%] space-x-2"
         initial="hidden"whileInView
         ="visible"
-        viewport={{ once: false, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 1 }}
         variants={{
           hidden: { opacity: 0, x: -50 },
@@ -43,7 +43,7 @@ const Gallery = ({setSelectedPage}: Props) => {
         className="flex w-[100%] space-x-2"
         initial="hidden"whileInView
         ="visible"
-        viewport={{ once: false, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 0.5 }}
         variants={{
           hidden: { opacity: 0, x: 50 },

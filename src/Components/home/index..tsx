@@ -1,22 +1,21 @@
-import { SelectedPage } from "@/shared/types";
-import ActionButton from "@/shared/ActionButton";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion } from "framer-motion";
 import home from "@/assets/home.png";
 
 type Props = {
-  setSelectedPage: (value: SelectedPage) => void;
+ 
 };
 
-const Home = ({ setSelectedPage }: Props) => {
+const Home = ({}: Props) => {
   //const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
 
   return (
-    <section id="home" className="gap-16  lg:h-[100%] font-dmsans bg-black text-white py-10 max-xxsm:py-5 md:pb-0">
+    <section id="home" className="gap-16 lg:h-[100%] font-dmsans bg-black text-white py-10 max-xxsm:py-5 md:pb-0">
       {/* IMAGE AND MAIN HEADER */}
       <motion.div
         className="mx-auto w-5/6 max-lg:w-[90%] fle  items-center justify-center md:flex md:h-5/6"
-        onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
+       // onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
+        //onScroll={()=> setSelectedPage}
       >
         {/* MAIN HEADER */}
         <div className="z-10 pt-60 max-sm:pt-28  max-md:w-[100%] max-md:pt-32 md:basis-3/5">
@@ -60,13 +59,14 @@ const Home = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <ActionButton setSelectedPage={setSelectedPage}>
+            <button className="rounded-md bg-blue-500 max-md:text-[12px] max-sm:px-8 max-xxsm:px-3 px-10 py-2 hover:bg-blue-400 text-white hover:text-white"  
+            >
               Join Now
-            </ActionButton>
+            </button>
             <AnchorLink
               className="text-sm  border max-md:text-[12px] px-10 max-xxsm:px-4 py-2 rounded-md hover:text-secondary-500"
-              onClick={() => setSelectedPage(SelectedPage.ContactUs)}
-              href={`#${SelectedPage.ContactUs}`}
+             // onClick={() => setSelectedPage(SelectedPage.ContactUs)}
+              //href={`#${SelectedPage.ContactUs}`}
             >
               <p>Learn More</p>
             </AnchorLink>

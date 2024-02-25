@@ -1,12 +1,12 @@
-import { SelectedPage, UserData } from "@/shared/types"
+import {  UserData } from "@/shared/types"
 import { motion } from "framer-motion"
 
 type Data = {
     users: UserData[]
-    setSelectedPage: (value: SelectedPage) => void;
+    
 }
 
-const Workout = ({users, setSelectedPage}: Data) => {
+const Workout = ({users}: Data) => {
   return (
     <section id="workoutprograms" className=" text-white pt-20 max-sm:pt-10 bg-black ">
         <h1 className="mx-auto z-20 max-sm:text-[20px] w-[90%] flex font-dmsans font-bold text-[30px] justify-start md:flex md:h-5/6">
@@ -16,7 +16,7 @@ const Workout = ({users, setSelectedPage}: Data) => {
         <motion.div 
         className="mx-auto w-[90%] max-lg:w-[95%] flex  font-dmsans md:flex"
         
-        onViewportEnter={() => setSelectedPage(SelectedPage.WorkoutPrograms)}
+       // onViewportEnter={() => setSelectedPage(SelectedPage.WorkoutPrograms)}
         >
     <motion.div className="flex justify-evenly max-md:grid max-md:grid-cols-3 max-sm:grid-cols-2 w-[100%]"
         initial="hidden"whileInView

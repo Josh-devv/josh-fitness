@@ -2,13 +2,12 @@ import gal1 from "@/assets/g1.png"
 import gal2 from "@/assets/g2.png"
 import gal3 from "@/assets/g5.png"
 import gal4 from "@/assets/g6.png"
-import { SelectedPage } from "@/shared/types"
 import { motion } from "framer-motion"
 
 type Props = {
-    setSelectedPage: (value: SelectedPage)=> void;
+   
 }
-const Gallery = ({setSelectedPage}: Props) => {
+const Gallery = ({}: Props) => {
   return (
     <section id="" className="w-[100%] pt-20 max-sm:pt-10 py-8 flex flex-col justify-center items-center font-dmsans text-white  bg-black ">
         <div className="text-[25px] w-[100%] flex justify-center font-medium max-sm:text-[15px]">
@@ -17,7 +16,7 @@ const Gallery = ({setSelectedPage}: Props) => {
 
         <motion.div 
         className="w-[90%] flex flex-col justify-center"
-        onViewportEnter={()=> setSelectedPage(SelectedPage.Gallery) }
+       // onViewportEnter={()=> setSelectedPage(SelectedPage.Gallery) }
         >
     <div className="flex w-[100%] justify-evenly overflow-x-auto">
         <motion.div 

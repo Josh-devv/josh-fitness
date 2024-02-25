@@ -1,18 +1,18 @@
-import { RecipeData, SelectedPage } from "@/shared/types"
+import { RecipeData } from "@/shared/types"
 import rec1 from "@/assets/rec1.png"
 import { motion } from "framer-motion"
 
 type Props = {
     foods: RecipeData[];
-    setSelectedPage: (value: SelectedPage)=>void;
+    
 }
 
-const Recipe = ({foods, setSelectedPage}: Props) => {
+const Recipe = ({foods}: Props) => {
   return (
     <section id="recipe" className="w-[100%] bg-black mx-auto pt-20 max-sm:pt-10 py-8 flex justify-center font-dmsans text-white">
         <motion.div 
         className="w-[90%] max-lg:w-[90%]"
-        onViewportEnter={()=> setSelectedPage(SelectedPage.Recipe)}
+        //onViewportEnter={()=> setSelectedPage(SelectedPage.Recipe)}
         >
             <div className="w-[95%] flex items-center justify-between">
                 <p className="text-[25px] font-medium max-sm:text-[15px] max-xxsm:text-[13px]">///RECIPES</p>

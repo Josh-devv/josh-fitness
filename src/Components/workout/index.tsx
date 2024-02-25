@@ -1,19 +1,33 @@
-import { UserData } from "@/shared/types"
+import { SelectedPage, UserData } from "@/shared/types"
+import { motion } from "framer-motion"
 
 type Data = {
     users: UserData[]
-
+    setSelectedPage: (value: SelectedPage) => void;
 }
 
-const Workout = ({users}: Data) => {
+const Workout = ({users, setSelectedPage}: Data) => {
   return (
     <section id="workoutprograms" className=" text-white pt-20 max-sm:pt-10 bg-black ">
         <h1 className="mx-auto z-20 max-sm:text-[20px] w-[90%] flex font-dmsans font-bold text-[30px] justify-start md:flex md:h-5/6">
             Free Workout Program
         </h1>
 
-        <div className="mx-auto w-[90%] max-lg:w-[95%] flex  font-dmsans md:flex ">
-    <div className="flex justify-evenly max-md:grid max-md:grid-cols-3 max-sm:grid-cols-2 w-[100%]">
+        <motion.div 
+        className="mx-auto w-[90%] max-lg:w-[95%] flex  font-dmsans md:flex"
+        
+        onViewportEnter={() => setSelectedPage(SelectedPage.WorkoutPrograms)}
+        >
+    <motion.div className="flex justify-evenly max-md:grid max-md:grid-cols-3 max-sm:grid-cols-2 w-[100%]"
+        initial="hidden"whileInView
+        ="visible"
+        viewport={{ once: false, amount: 0.1 }}
+        transition={{ duration: 1 }}
+        variants={{
+          hidden: { opacity: 0, x: -50 },
+          visible: { opacity: 1, x: 0 },
+        }}
+    >
         {users.map((user) => (
             <div className="my-4 mx-2 relative">
                 <img src={user.img} className="max-w-[200px w-full" alt="" />
@@ -26,10 +40,10 @@ const Workout = ({users}: Data) => {
                 </button>
             </div>
         ))}
-    </div>
+    </motion.div>
 
 
-         </div>
+         </motion.div>
     </section>
   )
 }

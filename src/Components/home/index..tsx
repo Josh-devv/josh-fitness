@@ -25,8 +25,8 @@ const Home = ({ setSelectedPage }: Props) => {
             className="md:-mt-20"
             initial="hidden"whileInView
             ="visible"
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5 }}
+            viewport={{ once: false, amount: 0.5 }}
+            transition={{ duration: 0.9 }}
             variants={{
               hidden: { opacity: 0, x: -50 },
               visible: { opacity: 1, x: 0 },

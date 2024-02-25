@@ -112,16 +112,21 @@ function App() {
   return (
     <div className="app h-full bg-black font-montserrat">
       
-      <Navbar 
-      
+      <Navbar  
       top={top}
       selectedPage={selectedPage}
       setSelectedPage={setSelectedPage}
       />
       <Home setSelectedPage={setSelectedPage}/>
-      <Workout users={users}/>     
-      <Gallery />
-      <Recipe foods={foods}/>
+      <Workout 
+      users={users}
+      setSelectedPage={setSelectedPage}
+      />     
+      <Gallery setSelectedPage= {setSelectedPage}/>
+      <Recipe 
+      foods={foods}
+      setSelectedPage={setSelectedPage}
+      />
       <Merch items={items}/>
       <Contact />
     </div>

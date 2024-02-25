@@ -1,15 +1,19 @@
-import { RecipeData } from "@/shared/types"
+import { RecipeData, SelectedPage } from "@/shared/types"
 import rec1 from "@/assets/rec1.png"
-
+import { motion } from "framer-motion"
 
 type Props = {
-    foods: RecipeData[]
+    foods: RecipeData[];
+    setSelectedPage: (value: SelectedPage)=>void;
 }
 
-const Recipe = ({foods}: Props) => {
+const Recipe = ({foods, setSelectedPage}: Props) => {
   return (
     <section id="recipe" className="w-[100%] bg-black mx-auto pt-20 max-sm:pt-10 py-8 flex justify-center font-dmsans text-white">
-        <div className="w-[90%] max-lg:w-[90%]">
+        <motion.div 
+        className="w-[90%] max-lg:w-[90%]"
+        onViewportEnter={()=> setSelectedPage(SelectedPage.Recipe)}
+        >
             <div className="w-[95%] flex items-center justify-between">
                 <p className="text-[25px] font-medium max-sm:text-[15px] max-xxsm:text-[13px]">///RECIPES</p>
                 <button className="border border-white px-3 py-2 max-xxsm:text-[12px] rounded-lg max-sm:py-1">View more recipes</button>
@@ -17,9 +21,19 @@ const Recipe = ({foods}: Props) => {
 
             <div className="flex pt-10 max-md:flex-col  justify-between">
                 <div className="flex w-[70%] max-sm:flex-col max-md:w-[100%] items-center">
-                    <div className="">
+                    <motion.div 
+                    className=""
+                    initial="hidden"whileInView
+                    ="visible"
+                    viewport={{ once: false, amount: 0.5 }}
+                    transition={{ duration: 0.2 }}
+                    variants={{
+                      hidden: { opacity: 0, y: 50 },
+                      visible: { opacity: 1, y: 0 },
+                    }}
+                    >
                         <img src={rec1}  className="rounded-3xl max-sm:w-[100%] max-lg:w-[280px]"/> 
-                    </div>
+                    </motion.div>
                     <div className="pl-5 max-sm:pl-0">
                         <p className="text-[25px] max-sm:pt-3 max-sm:text-[20px] font-bold">Protein-packed Power Bowl</p>
                         <p className="w-[300px] max-md:w-[400px] max-sm:text-[13px] max-sm:w-[100%] max-sm:py-3  text-[15px] py-5">
@@ -33,7 +47,17 @@ const Recipe = ({foods}: Props) => {
                 </div>
 
                 <div className="w-[30%] max-md:w-[100%] max-md:pt-10 max-sm:pt-5">
-                    <div className="flex flex-col max-sm:grid max-sm:grid-cols-2 max-md:flex-row justify-around max-md:justify-between h-full">
+                    <motion.div 
+                    className="flex flex-col max-sm:grid max-sm:grid-cols-2 max-md:flex-row justify-around max-md:justify-between h-full"
+                    initial="hidden"whileInView
+                    ="visible"
+                    viewport={{ once: false, amount: 0.5 }}
+                    transition={{ duration: 0.9 }}
+                    variants={{
+                      hidden: { opacity: 0, x: -50 },
+                      visible: { opacity: 1, x: 0 },
+                    }}
+                    >
                         {
                             foods.map((food)=>(
                                 <div className="flex  max-md:flex-col max-md:w-[100%] gap-x-4 max items-center">
@@ -42,10 +66,10 @@ const Recipe = ({foods}: Props) => {
                                 </div>
                             ))
                         }
-                    </div>
+                    </motion.div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     </section>
   )
 }

@@ -33,7 +33,7 @@ const Navbar = ({ top }: Props) => {
                     <Link to="/about">
                       About
                     </Link>
-                    <Link to="/about">
+                    <Link to="/workoutprograms">
                       Workout Programs
                     </Link>
                     <Link to="/about">
@@ -60,14 +60,15 @@ const Navbar = ({ top }: Props) => {
 
             {
               !medScreen && menu && (
-                <div className="fixed right-0 bottom-0 z-40 h-full bg-black drop-shadow-xl w-[300px]">
+                <div className="types fixed right-0 bottom-0 right- z-40 h-full bg-black drop-shadow-xl max-sm:w-[100%] w-[300px]">
                   <div className="flex justify-end p-12">
+                    <div></div>
                       <button onClick={()=> setMenu(!menu)}>
                         <XMarkIcon className="h-6 w-6 text-gray-400"/>
                       </button>
                   </div>
 
-                  <div className="pl-10 font-dmsans flex flex-col gap-10 text-[15px]">
+                  <div className="text-[20px] text-white justify-center font-dmsans flex flex-col items-center gap-10 ">
                   <Link to="/">
                       Home
                     </Link>
@@ -83,7 +84,7 @@ const Navbar = ({ top }: Props) => {
                     <Link to="/about">
                       Store
                     </Link>
-                      <div className="flex items-center">
+                      <div className="flex flex-col items-center">
                     <p className="px-5">Sign In</p>
                     <button className="bg-blue-500 py-2 rounded-md px-2">Become a Member</button>
                   </div>

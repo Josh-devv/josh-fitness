@@ -173,16 +173,7 @@ const WorkoutPage = () => {
           <img src={slid3} alt="slide_image"  className="max-sm:w-[90%] max-lg:w-[410px] w-[300px] max-md:w-[300px] rounded-3xl"  />
           <button className="absolute top-[90%] z-10 bg-white text-black px-4 rounded-md">20-40 mins </button>
         </div>
-{/*
-        <div className="slider-controler">
-          <div className="swiper-button-prev slider-arrow">
-            <ion-icon name="arrow-back-outline"></ion-icon>
-          </div>
-          <div className="swiper-button-next slider-arrow">
-            <ion-icon name="arrow-forward-outline"></ion-icon>
-          </div>
-          <div className="swiper-pagination"></div>
-    </div> */}
+
       </Carousel>
             </div>
             

@@ -1,5 +1,6 @@
 import { CiCalendar, CiClock2 } from "react-icons/ci";
 import { CaroData } from "./types"
+import { Link } from "react-router-dom";
 
 type Props = {
     items: CaroData
@@ -7,7 +8,9 @@ type Props = {
 
 const Caro = ({items}: Props) => {
   return (
-    <div className=" flex  justify-center">
+
+    <Link to={`/challenge/${items.id}`}>
+     <div className=" flex  justify-center" key={items.id}>
        
     <img src={items.img} alt="slide_image" className=" max-sm:w-[95%] max-lg:w-[410px] w-[300px] max-md:w-[300px] rounded-3xl" />
     <div className="bg-gray-800 rounded-lg p-5 max-sm:py-8 max-xsm:py-6 max-xxsm:py-4 max-md:w-[90%] max-sm:top-[70%] max-md:top-[70%] max-lg:top-[80%] max-lg:w-[80%] absolute top-[70%] flex flex-col z-10 w-[70%]">
@@ -24,6 +27,8 @@ const Caro = ({items}: Props) => {
     </div>
     
   </div>
+    </Link>
+   
   )
 }
 

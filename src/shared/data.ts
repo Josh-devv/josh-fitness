@@ -101,26 +101,31 @@ export const users: UserData[] = [
 
   export const CaroItems: CaroData[] =[
     {
+      id: 1,
       img: slid,
       days: "14 days",
       time: "mins"
     },
     {
+      id: 2,
       img: slid1,
       days: "14 days",
       time: "mins"
     },
     {
+      id: 3,
       img: slid2,
       days: "14 days",
       time: "mins"
     },
     {
+      id: 4,
       img: slid3,
       days: "14 days",
       time: "mins"
     },
     {
+      id: 5,
       img: slid4,
       days: "14 days",
       time: "mins"
@@ -128,26 +133,31 @@ export const users: UserData[] = [
   ]
   export const CaroItems1: CaroData[] =[
     {
+      id: 6,
       img: p1,
       days: "14 days",
       time: "mins"
     },
     {
+      id: 7,
       img: p2,
       days: "14 days",
       time: "mins"
     },
     {
+      id: 8,
       img: p3,
       days: "14 days",
       time: "mins"
     },
     {
+      id: 9,
       img: p4,
       days: "14 days",
       time: "mins"
     },
     {
+      id: 10,
       img: p5,
       days: "14 days",
       time: "mins"
@@ -155,26 +165,31 @@ export const users: UserData[] = [
   ]
   export const CaroItems2: CaroData[] =[
     {
+      id:11,
       img: p11,
       days: "14 days",
       time: "mins"
     },
     {
+      id: 12,
       img: p12,
       days: "14 days",
       time: "mins"
     },
     {
+      id: 13,
       img: pt2,
       days: "14 days",
       time: "mins"
     },
     {
+      id: 14,
       img: pt5,
       days: "14 days",
       time: "mins"
     },
     {
+      id: 15,
       img: p11,
       days: "14 days",
       time: "mins"

@@ -26,6 +26,7 @@ export type RecipeData = {
 }
 
 export type CaroData = {
+  id: number;
   img: string;
   days: string;
   time: string;

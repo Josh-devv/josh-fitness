@@ -19,7 +19,7 @@ const Navbar = ({ top }: Props) => {
 
   return (
     <nav>
-      <div className={`flex justify-center ${navbg} font-dmsans font-normal  fixed top-0 z-30 w-[100%] py-6`}>
+      <div className={`flex justify-center ${navbg} font-dmsans font-normal  fixed top-0 z-50 w-[100%] py-6`}>
         <div className={`w-5/6 max-lg:w-[90%] flex justify-between`}>
             <div className={` flex items-center w-[100%] justify-between  gap-8 text-sm`}>
               <img alt="" className="w-[120px]" src={fit} />

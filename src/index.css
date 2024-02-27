@@ -23,7 +23,7 @@ body,
 
 .types{
     height: 100%;
-    animation: up .5s ease-in-out forwards;
+    animation: up .2s ease-in;
     width: 100%;
     scroll-behavior: smooth;
 }

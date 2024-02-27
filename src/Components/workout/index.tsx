@@ -30,7 +30,7 @@ const Workout = ({users}: Data) => {
     >
         {users.map((user) => (
             <div className="my-4 mx-2 relative">
-                <img src={user.img} className="max-w-[200px w-full" alt="" />
+                <img src={user.img} className="max-w-[200px max-sm:h-[40vh] object-cover max-sm:w-[50vw] w-full" alt="" />
                 <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30"></div>
                 <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white z-10 whitespace-nowrap">
                     <span className="inline-block max-xxsm:text-[15px] max-sm:text-[20px] transform -rotate-90 font-bold text-[30px]">{user.text}</span>

@@ -20,7 +20,7 @@ const Navbar = ({ top }: Props) => {
   return (
     <nav>
       <div className={`flex justify-center ${navbg} font-dmsans font-normal  fixed top-0 z-50 w-[100%] py-6`}>
-        <div className={`w-5/6 max-lg:w-[90%] flex justify-between`}>
+        <div className={`w-[90%] max-lg:w-[90%] flex justify-between`}>
             <div className={` flex items-center w-[100%] justify-between  gap-8 text-sm`}>
               <img alt="" className="w-[120px]" src={fit} />
 
@@ -52,7 +52,14 @@ const Navbar = ({ top }: Props) => {
               ) : (
                 <button className="rounded-full bg-black p-2"
                 onClick={()=> setMenu(!menu)}>
-                  <Bars3Icon className="h-6 w-6 text-white" />
+                  {
+                    !menu ? (
+                       <Bars3Icon className="h-6 w-6 text-white" />
+                    ) : (
+                      <XMarkIcon className="h-6 w-6 text-white"/>
+                    )
+                  }
+                 
                 </button>
               )  }
             </div>

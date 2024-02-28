@@ -10,7 +10,7 @@ const Merch = ({items}: Props) => {
     <section className="w-[100%] bg-black mx-auto pt-20 max-sm:pt-10 py-8 flex justify-center font-dmsans text-white">
         <div className="w-[90%] ">
             <div className="w-[95%] flex items-center justify-between">
-                <p className="text-[25px] font-medium max-sm:text-[15px] max-xxsm:text-[12px]">///GET OUR MERCH</p>
+                <p className="text-[25px] font-medium max-sm:text-[15px] max-xxsm:text-[12px]">Get Our Merch</p>
                 <button className="border bg-white text-black border-white px-3 py-2 rounded-lg max-xxsm:text-[12px] max-sm:py-1">View product</button>
             </div>
 

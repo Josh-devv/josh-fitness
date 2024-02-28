@@ -4,8 +4,8 @@ const Contact = () => {
   return (
     <section id="" className="w-[100%] pt-20 max-sm:pt-10 py-8 flex flex-col justify-center items-center font-dmsans text-white  bg-black ">
         <div className="text-[25px] w-[90%] flex justify-center flex-col font-medium max-sm:text-[15px]">
-            <p className="w-[90%] self-start max-sm:text-[20px] pb-6 max-xxsm:text-[20px]">///Contact Us</p>
-            <p className="font-normal w-[70%] max-sm:w-[90%] pb-5 text-[15px]">
+            <p className="w-[90%] self-start max-sm:text-[20px] pb-6 max-xxsm:text-[20px] font-bold">Contact Us</p>
+            <p className="font-normal w-[70%] max-xxsm:text-[12px] max-sm:w-[90%] max-xxsm:w-[100%] pb-5 text-[15px]">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, laudantium numquam asperiores minima sit minus totam suscipit quam ab vero!
             </p>
         </div>

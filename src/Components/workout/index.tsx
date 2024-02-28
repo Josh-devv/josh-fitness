@@ -9,12 +9,12 @@ type Data = {
 const Workout = ({users}: Data) => {
   return (
     <section id="workoutprograms" className=" text-white pt-20 max-sm:pt-10 bg-black ">
-        <h1 className="mx-auto z-20 max-sm:text-[20px] w-[90%] flex font-dmsans font-bold text-[30px] justify-start md:flex md:h-5/6">
+        <h1 className="mx-auto max-xxsm:text-[15px] z-20 max-sm:text-[20px] w-[85%] flex font-dmsans font-bold text-[30px] justify-start md:flex md:h-5/6">
             Free Workout Program
         </h1>
 
         <motion.div 
-        className="mx-auto w-[90%] max-lg:w-[95%] flex  font-dmsans md:flex"
+        className="mx-auto w-[85%] max-lg:w-[95%] flex  font-dmsans md:flex"
         
        // onViewportEnter={() => setSelectedPage(SelectedPage.WorkoutPrograms)}
         >
@@ -30,7 +30,7 @@ const Workout = ({users}: Data) => {
     >
         {users.map((user) => (
             <div className="my-4 mx-2 relative">
-                <img src={user.img} className="max-w-[200px max-sm:h-[40vh] object-cover max-sm:w-[50vw] w-full" alt="" />
+                <img src={user.img} className="max-w-[200px max-xxsm:h-[50vh] object-cover max-sm:w-[50vw] w-full" alt="" />
                 <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30"></div>
                 <p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white z-10 whitespace-nowrap">
                     <span className="inline-block max-xxsm:text-[15px] max-sm:text-[20px] transform -rotate-90 font-bold text-[30px]">{user.text}</span>

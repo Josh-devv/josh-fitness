@@ -26,11 +26,11 @@ const About = () => {
       <section className="bg-cover items-center flex flex-col h-[90vh] justify-cen w-[100%] bg-center font-dmsans text-white" style={{ backgroundImage: `url(${bg})` }}>
       
       
-      <div className="pt-20 w-[90%] z-20 max-sm:pt-32  max-lg:w-[90%]">
+      <div className="pt-20 w-[90%] z-20 max-sm:pt-32  max-xxsm:w-[95%] max-lg:w-[90%]">
           <p className="text-[5vw] max-lg:text-[6vw] max-sm:text-[8vw] max-md:text-[7vw]">Get more out of your</p>
           <p className="text-[5vw] font-bold max-sm:text-[9vw] max-lg:text-[6vw] max-md:text-[7vw]">Fitness Journey</p>
           <p className="py-4">Join the community to track your progress</p>
-          <p className="w-[60%] max-sm:text-[13px] max-lg:w-[80%] max-md:w-[100%]">
+          <p className="w-[60%] max-sm:text-[13px] max-xxsm:text-[12px] max-lg:w-[80%] max-md:w-[100%]">
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa 
            quae ab illo inventore veritatis et quasi architecto beatae vitae 

@@ -40,7 +40,7 @@ const Home = ({}: Props) => {
               </div>
             </div>
 
-            <p className="mt-8 max-xsm:mt-4 text-sm ">
+            <p className="mt-8 max-xsm:mt-4 text-sm max-xxsm:text-[12px] max-xxsm:w-[100%]">
             Being physically active can improve your brain health,
              help manage weight, reduce the risk of disease, strengthen
               bones and muscles, and improve your ability to do everyday activities. Adults who si

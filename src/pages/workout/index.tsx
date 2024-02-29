@@ -29,11 +29,11 @@ const WorkoutPage = () => {
   return (
     <>
         <Navbar top={top}/>
-        <div className="pt-10 ">
+        <div className="pt-5 ">
             <Workout users={users}/>
         </div>
 
-        <section id="" className="w-[100%] pt-20 max-sm:pt-10 py-8 flex flex-col justify-center items-center font-dmsans text-white  bg-black ">
+        <section id="" className="w-[100%] pt-15 max-sm:pt-10 py-8 flex flex-col justify-center items-center font-dmsans text-white  bg-black ">
             <div className="text-[25px] w-[85%] flex justify-center flex-col font-medium max-sm:text-[15px]">
                 <p className="w-[90%] self-start text-[40px] max-sm:text-[20px] font-bold pb-2 max-xxsm:text-[20px]">Beginner Friendly</p>
                 <p className="font-normal w-[70%] max-lg:w-[90%] max-sm:w-[95%] pb-2 text-[15px]">
@@ -43,7 +43,7 @@ const WorkoutPage = () => {
                 <button className="w-[15%] max-sm:text-[13px] max-sm:w-[50%] max-lg:w-[30%] font-normal rounded-md py-1 bg-white text-black text-[17px] border">1093+ People Tried</button>
             </div>
 
-            <div className=" pt-12 container ">
+            <div className=" pt-6 container ">
             
   
         
@@ -71,7 +71,7 @@ progress further.
                 <button className="w-[15%] max-sm:text-[13px] max-sm:w-[50%] max-lg:w-[30%] font-normal rounded-md py-1 bg-white text-black text-[17px] border">1093+ People Tried</button>
             </div>
 
-            <div className=" pt-12 container ">
+            <div className=" pt-6 container ">
             
   
         
@@ -98,7 +98,7 @@ progress further.
                 <button className="w-[15%] max-sm:text-[13px] max-sm:w-[50%] max-lg:w-[30%] font-normal rounded-md py-1 bg-white text-black text-[17px] border">1093+ People Tried</button>
             </div>
 
-            <div className=" pt-12 container ">
+            <div className=" pt-6 container ">
             
   
         
@@ -126,7 +126,7 @@ progress further.
                 <button className="w-[15%] max-sm:text-[13px] max-sm:w-[50%] max-lg:w-[30%] font-normal rounded-md py-1 bg-white text-black text-[17px] border">1093+ People Tried</button>
             </div>
 
-            <div className=" pt-12 container ">
+            <div className=" pt-6 container ">
             
   
         
@@ -154,7 +154,7 @@ progress further.
                 <button className="w-[15%] max-sm:text-[13px] max-sm:w-[50%] max-lg:w-[30%] font-normal rounded-md py-1 bg-white text-black text-[17px] border">1093+ People Tried</button>
             </div>
 
-            <div className=" pt-12 container ">
+            <div className=" pt-6 container ">
             
   
         

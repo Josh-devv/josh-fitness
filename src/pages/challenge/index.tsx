@@ -13,12 +13,8 @@ type Params = {
 
 const Challenge = () => {
     const { id } = useParams<Params>();
-    const [top, setTop] = useState<boolean>(true);
-    const [isOpen, setIsOpen] = useState(false);
-
-  const toggleAccordion = () => {
-    setIsOpen(!isOpen);
-  };
+    
+    const [top, setTop] = useState<boolean>(true)
 
     useEffect(() => {
         const handleScroll = () => {

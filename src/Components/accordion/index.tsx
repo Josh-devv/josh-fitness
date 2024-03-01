@@ -8,6 +8,7 @@ import MuiAccordionSummary, {
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 
+
 const Accordion = styled((props: AccordionProps) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
@@ -50,8 +51,11 @@ export default function CustomizedAccordions() {
   const handleChange =
     (panel: string) => (event: React.SyntheticEvent, newExpanded: boolean) => {
       setExpanded(newExpanded ? panel : false);
+      console.log(event);
+      
     };
 
+    
   return (
     <div className='w-[70%] max-md:w-[90%] rounded-3xl'>
       <Accordion expanded={expanded === 'panel1'} className='rounded-t-2xl' onChange={handleChange('panel1')}>

@@ -5,6 +5,8 @@ import { useParams } from "react-router-dom";
 import { CaroItems, CaroItems1, CaroItems2 } from "@/shared/data";
 import lin from "@/assets/line.png"
 import vid1 from "@/assets/vid1.png"
+import CustomizedAccordions from "@/Components/accordion";
+import Contact from "@/Components/contact";
     
 
 type Params = {
@@ -13,7 +15,7 @@ type Params = {
 
 const Challenge = () => {
     const { id } = useParams<Params>();
-    
+
     const [top, setTop] = useState<boolean>(true)
 
     useEffect(() => {
@@ -36,7 +38,7 @@ const Challenge = () => {
         return <div>No challenge found for this ID</div>;
     }
     return (
-        <div className="bg-black h-[100vh] max-sm:h-[100%]">
+        <div className="bg-black h-[100%] max-sm:h-[100%]">
             <Navbar top={top} />
             <section className="pt-28 flex justify-center text-white font-dmsans w-[100%]">
                 <div className="w-[85%] max-lg:w-[90%] max-md:justify-between max-sm:flex-col flex">
@@ -44,14 +46,14 @@ const Challenge = () => {
                         <img src={challengeItem.img} className="rounded-3xl w-[80%] max-md:w-[200px]  max-sm:w-[40%]" />
                         <span className="w-[100%] max-sm:w-[58%] self-end ">
                             <p className="text-[20px]  font-bold max-sm:text-[20px]">Motivation</p>
-                            <p className="w-[80%] text-[13px] max-sm:text-[12px] max-lg:w-[100%]">
+                            <p className="w-[80%] max-xxsm:text-[10px] text-[13px] max-sm:text-[12px] max-lg:w-[100%]">
                             A colorful protein-packed power bowl filled with flavorful,
                              meaty grilled satay tofu and an array of vibrant veggies on a
                               bed of fluffy quinoa. Completed with a healthy and delicious 
                             satay dipping sauce and crushed roasted peanuts. Delicious!
                        </p> </span>
                     </div>
-                    <div className="w-[90%] max-sm:w-[100%] max-sm:pb-40 max-lg:w-[70%] max-md:w-[65%] max-sm:pt-10">
+                    <div className="w-[90%] max-sm:w-[100%]  max-lg:w-[70%] max-md:w-[65%] max-sm:pt-7">
                         <p className="text-[25px] max-lg:text-[22px] max-sm:text-[20px]">2023 Get Abs Challenge</p>
                         <motion.div className="w-[100%] rounded-3xl bg-gray-800 px-2 py-1 flex flex-col justify-center">
                             <div className="flex w-[100%] ">
@@ -82,23 +84,23 @@ const Challenge = () => {
                                     <img src={lin} className="w-[15px] h-[250px] max-sm:w-[12px]" />
                                     <div className="w-[90%]">
                                         <div className="flex py-3">
-                                            <img src={vid1} className="w-[150px] max-sm:w-[150px]" />
+                                            <img src={vid1} className="w-[150px] max-xxsm:w-[100px] max-sm:w-[150px]" />
                                             <span className="pl-3">
-                                                <p className="font-bold">5mins warm up</p>
+                                                <p className="font-bold max-xxsm:text-[12px]">5mins warm up</p>
                                                 <p className="w-[70%] max-md:w-[95%] max-sm:text-[10px] max-md:text-[13px]">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
                                             </span>
                                         </div>
                                         <div className="flex py-3">
-                                            <img src={vid1} className="w-[150px] max-md:w-[150px] max-sm:w-[150px]" />
+                                            <img src={vid1} className="w-[150px] max-xxsm:w-[100px] max-md:w-[150px] max-sm:w-[150px]" />
                                             <span className="pl-3">
-                                                <p className="font-bold">5mins warm up</p>
+                                                <p className="font-bold max-xxsm:text-[12px]">5mins warm up</p>
                                                 <p className="w-[70%] max-md:w-[95%] max-md:text-[13px] max-sm:text-[10px]">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
                                             </span>
                                         </div>
                                         <div className="flex py-3">
-                                            <img src={vid1} className="w-[150px] max-sm:w-[150px]" />
+                                            <img src={vid1} className="w-[150px] max-xxsm:w-[100px] max-sm:w-[150px]" />
                                             <span className="pl-3">
-                                                <p className="font-bold">5mins warm up</p>
+                                                <p className="font-bold max-xxsm:text-[12px]">5mins warm up</p>
                                                 <p className="w-[70%] max-md:w-[95%] max-sm:text-[10px] max-md:text-[13px]">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
                                             </span>
                                         </div>
@@ -110,8 +112,13 @@ const Challenge = () => {
                 </div>
             </section>
 
-         
+         <section className="w-[100%] mt-16 max-sm:mt-10 flex justify-center">
+            <CustomizedAccordions />
+         </section>
            
+        <section>
+            <Contact />
+        </section>
         </div>
     );
 };

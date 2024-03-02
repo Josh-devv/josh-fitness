@@ -1,6 +1,6 @@
 import Workout from "@/Components/workout"
 import Navbar from "@/navbar"
-import { CaroItems, CaroItems1, CaroItems2, users } from "@/shared/data"
+import {  users } from "@/shared/data"
 import "react-multi-carousel/lib/styles.css";
 import { useEffect, useState } from "react"
 import 'swiper/css';
@@ -8,7 +8,6 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import { CiCalendar, CiClock2 } from "react-icons/ci";
 import 'swiper/css/navigation';
-import Caro from "@/shared/Caro";
 import Carousels from "@/shared/Carousels";
 import Contact from "@/Components/contact";
 import axios from "axios";

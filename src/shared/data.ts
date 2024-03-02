@@ -1,4 +1,4 @@
-import { CaroData, MerchData, RecipeData } from "@/shared/types"
+import { CaroData, MerchData, RecipeData, DayData, workoutsData, ContentData } from "@/shared/types"
 import { UserData } from "@/shared/types"
 import img1 from "@/assets/real.png"
 import img2 from "@/assets/real1.png"
@@ -21,6 +21,7 @@ import p11 from "@/assets/p11.png"
 import p12 from "@/assets/p12.png"
 import pt2 from "@/assets/pt2.png"
 import pt5 from "@/assets/pt5.png"
+
 
 
 
@@ -195,4 +196,144 @@ export const users: UserData[] = [
       time: "mins"
     }
   ]
-  
+  export const Day: DayData[] =[
+    {
+      id: 1,
+      days: "Day 1",
+      workday: "Day 1's Workout"
+    },
+    {
+      id: 2,
+      days: "Day 2",
+      workday: "Day 1's Workout"
+    },
+    {
+      id: 3,
+      days: "Day 3",
+      workday: "Day 1's Workout"
+    },
+    {
+      id: 4,
+      days: "Day 4",
+      workday: "Day 1's Workout"
+    },
+    {
+      id: 5,
+      days: "Day 5",
+      workday: "Day 1's Workout"
+    },
+    {
+      id: 6,
+      days: "Day 6",
+      workday: "Day 1's Workout"
+    },
+    {
+      id: 7,
+      days: "Day 7",
+      workday: "Day 1's Workout"
+    },
+  ]
+
+  export const Workout: workoutsData[] = [
+    { 
+      id: 1, workout: 'Day 1 Workout' ,
+      title: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis",
+      time: "5 mins warm up"
+    },
+    { 
+      id: 2, workout: 'Day 2 Workout' ,
+      title: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis",
+      time: "5 mins warm up"
+    },
+    { 
+      id: 3, workout: 'Day 3 Workout' ,
+      title: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis",
+      time: "5 mins warm up"
+    },
+    { 
+      id: 4, workout: 'Day 4 Workout' ,
+      title: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis",
+      time: "5 mins warm up"
+    },
+    { 
+      id: 5, workout: 'Day 5 Workout' ,
+      title: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis",
+      time: "5 mins warm up"
+    },
+    { 
+      id: 6, workout: 'Day 6 Workout' ,
+      title: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis",
+      time: "5 mins warm up"
+    },
+    { 
+      id: 7, workout: 'Day 7 Workout' ,
+      title: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis",
+      time: "5 mins warm up"
+    },
+    // Add more workouts as needed
+];
+export const Contents: ContentData[] =[
+  {
+    id:1,
+    title1: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis",
+    time1: "5 mins warm up",
+    title2: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis",
+    time2: "5 mins warm up",
+    title3: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis",
+    time3: "5 mins warm up",
+  },
+  {
+    id:2,
+    title1: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis",
+    time1: "5 mins warm up",
+    title2: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis",
+    time2: "5 mins warm up",
+    title3: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis",
+    time3: "5 mins warm up",
+  },
+  {
+    id:3,
+    title1: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis",
+    time1: "5 mins warm up",
+    title2: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis",
+    time2: "5 mins warm up",
+    title3: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis",
+    time3: "5 mins warm up",
+  },
+  {
+    id:4,
+    title1: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis",
+    time1: "5 mins warm up",
+    title2: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis",
+    time2: "5 mins warm up",
+    title3: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis",
+    time3: "5 mins warm up",
+  },
+  {
+    id:5,
+    title1: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis",
+    time1: "5 mins warm up",
+    title2: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis",
+    time2: "5 mins warm up",
+    title3: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis",
+    time3: "5 mins warm up",
+  },
+  {
+    id:6,
+    title1: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis",
+    time1: "5 mins warm up",
+    title2: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis",
+    time2: "5 mins warm up",
+    title3: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis",
+    time3: "5 mins warm up",
+  },
+  {
+    id:7,
+    title1: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis",
+    time1: "5 mins warm up",
+    title2: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis",
+    time2: "5 mins warm up",
+    title3: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis",
+    time3: "5 mins warm up",
+  },
+]

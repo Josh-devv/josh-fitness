@@ -2,12 +2,11 @@ import Navbar from "@/navbar";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useParams } from "react-router-dom";
-import { CaroItems, CaroItems1, CaroItems2 } from "@/shared/data";
+import { CaroItems, CaroItems1, CaroItems2, Day, Workout, Contents } from "@/shared/data";
 import lin from "@/assets/line.png"
 import vid1 from "@/assets/vid1.png"
 import CustomizedAccordions from "@/Components/accordion";
 import Contact from "@/Components/contact";
-    
 
 type Params = {
     id: string;
@@ -15,9 +14,11 @@ type Params = {
 
 const Challenge = () => {
     const { id } = useParams<Params>();
-
+    const [activeDay, setActiveDay] = useState(0);
+  
     const [top, setTop] = useState<boolean>(true)
 
+  
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY !== 0) setTop(false);
@@ -37,6 +38,12 @@ const Challenge = () => {
     if (!challengeItem) {
         return <div>No challenge found for this ID</div>;
     }
+
+    const handleDayClick = (index: number) => {
+        setActiveDay(index);
+    };
+
+
     return (
         <div className="bg-black h-[100%] max-sm:h-[100%]">
             <Navbar top={top} />
@@ -65,47 +72,59 @@ const Challenge = () => {
                                     variants={{
                                         hidden: { opacity: 0, x: 50 },
                                         visible: { opacity: 1, x: 0 },
-                                    }}
-                                >
-                                    <p className="bg-white max-sm:text-[10px] max-sm:font-bold text-center rounded-2xl max-md:w-[50px] text-[12px] w-[70px] py-2 text-black">Day 1</p>
-                                    <p className="bg-white max-sm:text-[10px] max-sm:font-bold text-center rounded-2xl max-md:w-[50px] text-[12px] w-[70px] py-2 text-black">Day 2</p>
-                                    <p className="bg-white max-sm:text-[10px] max-sm:font-bold text-center rounded-2xl max-md:w-[50px] text-[12px] w-[70px] py-2 text-black">Day 3</p>
-                                    <p className="bg-white max-sm:text-[10px] max-sm:font-bold text-center rounded-2xl max-md:w-[50px] text-[12px] w-[70px] py-2 text-black">Day 4</p>
-                                    <p className="bg-white max-sm:text-[10px] max-sm:font-bold text-center rounded-2xl max-md:w-[50px] text-[12px] w-[70px] py-2 text-black">Day 5</p>
-                                    <p className="bg-white max-sm:text-[10px] max-sm:font-bold text-center rounded-2xl max-md:w-[50px] text-[12px] w-[70px] py-2 text-black">Day 6</p>
-                                    <p className="bg-white max-sm:text-[10px] max-sm:font-bold text-center rounded-2xl max-md:w-[50px] text-[12px] w-[70px] py-2 text-black">Day 7</p>
+                                    }}>
+                                        {
+                                            Day.map((day, index) => (
+                                                <p key={day.id} 
+                                                onClick={() => handleDayClick(index)}
+                                                className={`bg-white max-sm:text-[10px] max-sm:font-bold 
+                                                text-center rounded-2xl max-md:w-[50px] text-[12px] w-[70px]
+                                                 py-2 text-black  ${index === activeDay ? 'bg-gray-400' : ''}`}>
+                                                    {day.days}
+                                                </p>
+                                            ))
+                                        }
                                 </motion.div>
                             </div>
                         </motion.div>
                         <div>
                             <div className="bg-gray-800 mt-2 h-[100%] rounded-3xl ">
-                                <p className="p-3 text-[25px] font-bold max-sm:text-[20px]">Day 1's Workout</p>
-                                <div className="flex justify-evenly w-[]">
-                                    <img src={lin} className="w-[15px] h-[250px] max-sm:w-[12px]" />
-                                    <div className="w-[90%]">
-                                        <div className="flex py-3">
-                                            <img src={vid1} className="w-[150px] max-xxsm:w-[100px] max-sm:w-[150px]" />
+                                <p className="p-3 text-[25px] font-bold max-sm:text-[20px]">{Workout[activeDay].workout}</p>
+                                <motion.div className="flex justify-evenly w-[]">
+                                    <img src={lin} className="w-[15px] max-xxsm:w-[10px] max-xxsm:h-[180px] h-[250px] max-sm:w-[12px]" />
+                                    <motion.div 
+                                    className="w-[90%]"
+                                    initial="hidden" whileInView="visible"
+                                    viewport={{ once: false, amount: 0.5 }}
+                                    transition={{ duration: 1 }}
+                                    variants={{
+                                        hidden: { opacity: 0, x: 50 },
+                                        visible: { opacity: 1, x: 0 },
+                                    }}>
+                                    
+                                        <div className="flex py-3 max-xxsm:py-1">
+                                            <img src={vid1} className="w-[150px] max-xxsm:w-[80px] max-sm:w-[150px]" />
                                             <span className="pl-3">
-                                                <p className="font-bold max-xxsm:text-[12px]">5mins warm up</p>
-                                                <p className="w-[70%] max-md:w-[95%] max-sm:text-[10px] max-md:text-[13px]">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                                                <p className="font-bold max-xxsm:text-[12px]">{Contents[activeDay].time1}</p>
+                                                <p className="w-[70%] max-md:w-[95%] max-sm:text-[10px] max-md:text-[13px]">{Contents[activeDay].title1}</p>
                                             </span>
                                         </div>
-                                        <div className="flex py-3">
-                                            <img src={vid1} className="w-[150px] max-xxsm:w-[100px] max-md:w-[150px] max-sm:w-[150px]" />
+                                        <div className="flex py-3 max-xxsm:py-1">
+                                            <img src={vid1} className="w-[150px] max-xxsm:w-[80px] max-md:w-[150px] max-sm:w-[150px]" />
                                             <span className="pl-3">
-                                                <p className="font-bold max-xxsm:text-[12px]">5mins warm up</p>
-                                                <p className="w-[70%] max-md:w-[95%] max-md:text-[13px] max-sm:text-[10px]">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                                            <p className="font-bold max-xxsm:text-[12px]">{Contents[activeDay].time1}</p>
+                                                <p className="w-[70%] max-md:w-[95%] max-sm:text-[10px] max-md:text-[13px]">{Contents[activeDay].title1}</p>
                                             </span>
                                         </div>
-                                        <div className="flex py-3">
-                                            <img src={vid1} className="w-[150px] max-xxsm:w-[100px] max-sm:w-[150px]" />
+                                        <div className="flex py-3 max-xxsm:pb-2 max-xxsm:py-1">
+                                            <img src={vid1} className="w-[150px] max-xxsm:w-[80px] max-sm:w-[150px]" />
                                             <span className="pl-3">
-                                                <p className="font-bold max-xxsm:text-[12px]">5mins warm up</p>
-                                                <p className="w-[70%] max-md:w-[95%] max-sm:text-[10px] max-md:text-[13px]">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                                            <p className="font-bold max-xxsm:text-[12px]">{Contents[activeDay].time1}</p>
+                                                <p className="w-[70%] max-md:w-[95%] max-sm:text-[10px] max-md:text-[13px]">{Contents[activeDay].title1}</p>
                                             </span>
                                         </div>
-                                    </div>
-                                </div>
+                                    </motion.div>
+                                </motion.div>
                             </div>
                         </div>
                     </div>

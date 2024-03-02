@@ -31,3 +31,30 @@ export type CaroData = {
   days: string;
   time: string;
 }
+
+export type DayData = {
+  id: number;
+  days: string;
+  workday: string;
+}
+export type workoutsData={
+  id: number;
+  workout: string;
+  title: string;
+  time: string;
+}
+
+export type ContentData={
+  id: number;
+  title1: string;
+  title2: string;
+  title3: string;
+  time1: string;
+  time2: string;
+  time3: string;
+}
+
+export type Exercise={
+  name: string;
+  gifUrl: string;
+}

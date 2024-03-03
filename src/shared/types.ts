@@ -57,4 +57,6 @@ export type ContentData={
 export type Exercise={
   name: string;
   gifUrl: string;
+  id: number;
+  target: string;
 }

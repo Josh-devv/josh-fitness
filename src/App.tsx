@@ -3,6 +3,8 @@ import HomePage from './pages/home';
 import About from './pages/about'; // Correct import name
 import WorkoutPage from './pages/workout';
 import Challenge from './pages/challenge';
+import Recipes from './pages/recipe';
+import RecipeDetails from './pages/recipedet';
 
 
 
@@ -15,6 +17,8 @@ const App: React.FC = ()=> {
       <Route path="/about" element={<About />} />
       <Route path="/workoutprograms" element={<WorkoutPage />} />
       <Route path="/challenge/:id" element={<Challenge />} />
+      <Route path="/recipes" element={<Recipes />} />
+      <Route path="/recipedet/:id" element={<RecipeDetails />} />
 
  </Routes>
   </Router>

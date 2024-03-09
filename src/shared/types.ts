@@ -60,3 +60,13 @@ export type Exercise={
   id: number;
   target: string;
 }
+
+export type Details={
+  Title: string;
+ Image: string;
+
+}
+
+export type DietDate={
+  img: string;
+}

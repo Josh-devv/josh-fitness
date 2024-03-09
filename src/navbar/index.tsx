@@ -14,7 +14,7 @@ const Navbar = ({ top }: Props) => {
     const between = "flex items-center justify-between";
     const [menu, setMenu] = useState<boolean>(false)
     const medScreen = useMediaQuery("(min-width: 1024px)")
-    const navbg = top ? "" : " drop-shadow-xl bg-black";//wstyle for when its at the top of the page
+    const navbg = top ? "bg-transparent" : " drop-shadow-xl bg-black";//wstyle for when its at the top of the page
 
 
   return (

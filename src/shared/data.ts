@@ -1,4 +1,4 @@
-import { CaroData, MerchData, RecipeData, DayData, workoutsData, ContentData } from "@/shared/types"
+import { CaroData, MerchData, RecipeData, DayData, workoutsData, ContentData, DietDate } from "@/shared/types"
 import { UserData } from "@/shared/types"
 import img1 from "@/assets/real.png"
 import img2 from "@/assets/real1.png"
@@ -21,7 +21,7 @@ import p11 from "@/assets/p11.png"
 import p12 from "@/assets/p12.png"
 import pt2 from "@/assets/pt2.png"
 import pt5 from "@/assets/pt5.png"
-
+import ii from "@/assets/high.png"
 
 
 
@@ -336,4 +336,18 @@ export const Contents: ContentData[] =[
     title3: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis",
     time3: "5 mins warm up",
   },
+]
+
+export const Diets: DietDate[]=[
+  {
+    img: ii
+  },
+  
+  {
+    img:ii
+  },
+  {
+    img: ii
+  },
+
 ]

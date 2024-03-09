@@ -30,6 +30,9 @@ const WorkoutPage = () => {
     const [exercises3, setExercises3] = useState<Exercise[]>([]);
     const [exercises4, setExercises4] = useState<Exercise[]>([]);
 
+
+
+    
     useEffect(() => {
         const fetchData = async () => {
           const options: AxiosRequestConfig = {

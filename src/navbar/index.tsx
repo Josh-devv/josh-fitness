@@ -36,10 +36,10 @@ const Navbar = ({ top }: Props) => {
                     <Link to="/workoutprograms">
                       Workout Programs
                     </Link>
-                    <Link to="/about">
+                    <Link to="/recipes">
                       Recipe
                     </Link>
-                    <Link to="/about">
+                    <Link to="/store">
                       Store
                     </Link>
                       <div className="flex items-center">
@@ -85,10 +85,10 @@ const Navbar = ({ top }: Props) => {
                     <Link to="/workoutprograms">
                       Workout Programs
                     </Link>
-                    <Link to="/about">
+                    <Link to="/recipes">
                       Recipe
                     </Link>
-                    <Link to="/about">
+                    <Link to="/store">
                       Store
                     </Link>
                       <div className="flex flex-col items-center">

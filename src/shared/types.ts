@@ -18,6 +18,7 @@ export type UserData = {
 export type MerchData = {
   item: string;
   img: string;
+  name: string;
 }
 
 export type RecipeData = {

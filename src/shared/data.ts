@@ -65,19 +65,23 @@ export const users: UserData[] = [
   export const items: MerchData[] = [
     {
       item: "Bag",
-      img: m1
+      img: m1,
+      name: "TOTES BAG"
     },
     {
       item: "Shirt",
-      img: m1
+      img: m1,
+      name: "TOTES BAG"
     },
     {
       item: "Bottle",
-      img: m1
+      img: m1,
+      name: "TOTES BAG"
     },
     {
       item: "Shirt",
-      img: m1
+      img: m1,
+      name: "TOTES BAG"
     },
   ]
 
